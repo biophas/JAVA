@@ -1,0 +1,13 @@
+# Instalando o fremind via repository
+
+# É necessário instalar as plicações java openjdk-8 e openjre-8 primeiro
+
+# Adiciona o repositŕio
+
+echo 'deb http://archive.getdeb.net/ubuntu wily-getdeb apps' >> /etc/apt/sources.list
+
+apt-get update
+
+apt-get install freeplane 
+
+
