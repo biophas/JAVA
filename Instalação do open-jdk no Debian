@@ -1,0 +1,37 @@
+# Verificando se o ca-certificates-java já está instalado. 
+
+
+dpkg -l | grep ca-certificates-java
+
+ii  ca-certificates-java                    20170531+nmu1                               all          Common CA certificates (JKS keystore)
+
+# Atualize o ca-certificates-java
+
+apt-get upgrade ca-certificates-java
+
+# Caso aconteça algum erro execute
+
+apt-get install -f 
+
+# Depois rode novamente 
+
+apt-get upgrade ca-certificates-java
+
+# No final deste processo é para está instalado o openjdk-8-jre:amd64 e openjdk-8-jre-headless:amd64
+
+# Agora instale o openjdk-8-jdk
+
+apt-get install openjdk-8-jdk 
+
+# No final do processo é para os seguintes pacotes estarem instalados
+
+openjdk-8-jdk:amd64 e openjdk-8-jdk-headless:amd64
+
+
+# Fim da instalação
+
+
+
+
+
+
